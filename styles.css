@@ -4,9 +4,17 @@
   --cadmium-orange-l: hsla(27, 86%, 70%, 1);
   --cadmium-orange-d: hsla(27, 50%, 60%, 1);
   --cadmium-orange-dd: hsla(27, 50%, 50%, 1);
+  --sandy: hsl(41, 65%, 72%);
+  --sandy-d: hsl(41, 55%, 60%);
+  --sandy-l: hsl(41, 50%, 80%);
   --raisin-black: hsl(0, 0%, 15%);
   --raisin-black-l: hsl(0, 0%, 35%);
-  --raisin-black-ll: hsl(0, 0%, 90%);
+  --raisin-black-ll:  hsl(0, 0%, 50%);
+  --raisin-white: hsl(0, 0%, 90%);
+  --magenta: hsl(324, 30%, 55%);
+  --magenta-l: hsl(324, 30%, 65%);
+  --magenta-d: hsl(324, 40%, 60%);
+
   }
 html, body {
   overflow-x: hidden;
@@ -14,7 +22,7 @@ html, body {
   font-family: 'Trebuchet MS', sans-serif;
 }
 
-/* nav bar */
+/* ---------- nav bar ---------- */
 nav {
   /* positioning */
   position: fixed;
@@ -41,15 +49,15 @@ nav > div {
   padding-left: 2rem;
 }
 #menu-icon svg {
-  fill: var(--cadmium-orange);
+  fill:  var(--magenta);
   border: 3px solid transparent;
   border-radius: 6px;
   opacity: 1;
-  transition: 200ms;
+  transition: 100ms;
   cursor: pointer;
 }
 #menu-icon svg:hover {
-  border: 3px solid var(--cadmium-orange);
+  border: 3px solid  var(--magenta);
   border-radius: 6px;
 }
 #menu-icon svg:active {
@@ -57,43 +65,53 @@ nav > div {
 }
 
 .nav-links {
-  position: absolute;
+  /* positioning */
+  position: fixed;
   top: 10%;
   left: 0;
+  z-index: 1;
+  /* sizing */
   width: 15%;
   height: 90%;
-  color: black;
-  z-index: 1;
+  /* flex information */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--cadmium-orange-d);
+  /* styling */
+  background-color: var(--magenta);
   box-shadow: inset 0rem -0.2rem 1rem 0.1rem rgba(0, 0, 0, 0.6);
+  color: black;
+  font-size: 1.4vw;
 }
 .nav-link {
+  /* centering */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* size & positioning */
   flex: 1.5;
   padding-right: 1rem;
+  /* styling */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   border-bottom: 1px dotted;
-  border-color: var(--raisin-black-l);
+  border-color: white;
   box-shadow: none;
   transition: 200ms;
 }
 .nav-link:hover {
-  background-color: var(--cadmium-orange-dd);
+  background-color: var(--magenta-d);
   box-shadow: inset 0rem 0rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
+  font-size: 1.5vw;
 }
 .tbd {
-  flex:4
+  flex:3
 }
 
 a {
-  color: var(--raisin-black-ll);
+  color: white;
   text-decoration: none;
-  text-shadow: 1px 1px 3px black;
+  /*text-shadow: 1px 1px 3px black;*/
 }
 
 nav #site-title {
@@ -101,7 +119,7 @@ nav #site-title {
   padding-right: 3rem;
 }
 
-/* content */
+/* ---------- content ---------- */
 
 .content {
   /* positioning */
@@ -111,24 +129,60 @@ nav #site-title {
   left: 0;
   z-index: 2;
   /* sizing */
-  padding: 4rem;
-  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* MODIFY THIS AS YOU ADD MORE TO MAIN PAGE */
+  height: 150%;
   width: 100%;
-  box-sizing: border-box;
-  /* color scheme */
-  background-color: var(--raisin-black-l);
-  color: var(--cadmium-orange);
   transition: 400ms;
-  font-size: 2rem;
+  background-color: var(--raisin-black-ll);
 }
-.content h1 {
+#intro h1 {
   text-shadow: 1px 1px 5px black;
+  font-size: 4.5vw;
 }
 .content p {
   color: white;
   text-shadow: 1px 1px 5px black;
   overflow: hidden;
 }
+#intro {
+  /* sizing */
+  padding: 4vw;
+  box-sizing: border-box;
+  justify-content: center;
+  flex: 1;
+  /* color scheme */
+  background-color: var(--raisin-black-l);
+  color: var(--cadmium-orange);
+  font-size: 2vw;
+}
+#prof-pic {
+  position: absolute;
+  top: 12vw;
+  right: 6vw;
+  height: auto;
+  width: 20%;
+  border-radius: 50%;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
 #info-blurb {
   width: 70%;
+}
+#course-section {
+  padding: 4vw;
+  padding-top: 1.6vw;
+  background-color: var(--sandy);
+  flex: 1;
+  box-shadow: inset 0rem 0rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
+  color: var(--raisin-black);
+  font-size: 1.5vw;
+}
+#courses {
+  display: flex;
+}
+#year {
+  flex: 1;
+  text-align: center;
 }

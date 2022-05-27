@@ -5,6 +5,7 @@
   <head>
     <title> Home | Sean Mackin </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
 
   <body>
@@ -18,27 +19,84 @@
               <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
         </svg>
       </div>
-      <div id="site-title"> <h1> sean mackin's personal github site. (σμ) </h1> </div>
+      <div id="site-title"> <h1> sean mackin <span style="color: var(--raisin-black-ll);">|</span> <span style="color: var(--magenta);">mackin@nyu.edu </span> </h1> </div>
     </nav>
 
     <div class="nav-links">
-        <div class="nav-link"><a href="google.com"><h3>my resume</h3></a></div>
-        <div class="nav-link"><a href="https://seanmackin.github.io/vet-jeopardy/"><h3>vet jeopardy</h3>
-          <i> a teaching-tool game used by my mom to teach veterinary anaesthesiology</i></a><br></div>
-        <div class="nav-link"><a href="google.com"><h3>other project</h3></a></div>
+        <div class="nav-link"><a href="https://google.com" target="_blank"><h3>my resume</h3></a></div>
+        <div class="nav-link"><a href="https://seanmackin.github.io/vet-jeopardy/" target="_blank"><div style="line-height: 0.8;"><h3>vet jeopardy</h3>
+        <i style="font-size: 0.8vw;"> a teaching-tool game used by my mom to teach veterinary anaesthesiology</i></div></a><br></div>
+        <div class="nav-link"><a href="https://google.com" target="_blank"><h3>tbd: other project</h3></a></div>
         <div class="tbd"></div>
     </div>
 
     <div class="content">
-      <h1>hi! welcome to my site.</h1>
-      <div id="info-blurb">
-        <p>my name is sean mackin. i'm an honors math and computer science major, currently
-          attending new york university. here, you can find my resume, personal information,
-          projects, and other fun things.
-        </p>
-        <p>enjoy your stay :)</p>
+
+      <div id="intro">
+        <img id="prof-pic" src="./public/pixel_photo.jpg"/>
+        <h1>hi! welcome to my site.</h1>
+        <div id="info-blurb">
+          <p>my name is sean mackin. i'm an honors math and computer science major, currently
+            attending New York University. here, you can find my resume, personal information,
+            projects, and other fun things.
+          </p>
+          <p> <span style="color: var(--magenta-l);">about me</span>: i am from starkville,
+            mississippi, and graduated valedictorian from   starkville high school. i'm a
+            senior at nyu, and the co-president of the nyu math society. i love all things
+            math, food, games, and tv! can't forget: BLM, trans rights, you know the rest.
+          <p>enjoy your stay :)</p>
+        </div>
       </div>
 
+      <div id="course-section">
+        <h1 style="text-decoration: underline;"> major courses taken: </h1>
+        <div id="courses">
+          <div id="year">
+            <h3 style="text-align: left;"> mathematics </h3>
+            <ul>
+              <li>Honors Algebra II </li>
+              <li>Honors ODE</li>
+              <li>Graduate Analysis II</li>
+              <li>Honors Analysis I</li>
+              <li>Honors Algebra I</li>
+              <li>Functions of Complex Variables</li>
+            </ul>
+          </div>
+          <div id="year">
+            <h3 style="visibility: hidden;"> space </h3>
+            <ul>
+              <li>Honors Theory of Probability</li>
+              <li>Honors Linear Algebra</li>
+              <li>Honors Calculus III</li>
+              <li>Intro. to Computer Simulation</li>
+              <li>Discrete Mathematics</li>
+            </ul>
+          </div>
+          <div id="year">
+            <h3 style="text-align: left;"> computer science </h3>
+            <ul>
+              <li>Intro. to Machine Learning*</li>
+              <li>Applied Internet Technology</li>
+              <li>Theory of Computation</li>
+              <li>Operating Systems</li>
+              <li>Basic Algorithms</li>
+            </ul>
+          </div>
+          <div id="year">
+            <h3 style="visibility: hidden;"> space </h3>
+            <ul>
+              <li>Computer Systems Organization</li>
+              <li>Data Structures</li>
+              <li>Intro. to Computer Science</li>
+            </ul>
+          </div>
+      </div>
+      <span style="float: right;">*to be taken next semester!</span>
+      i am proficient in python, java, MATLAB, javascript, html/css, and <i>if i have to</i>, C/C++.
+      <br><br>i was also forunate to be selected to participate in the <span  style="color: var(--magenta-d); text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);">
+      Applied Math Summer Undergraduate Research Experience </span>, i.e. AM-SURE at NYU. i worked with NYU faculty of the sea-ice MURI
+      to create a novel model for the advection and diffusion of ice-floes in the Arctic ocean and present our work to NYU students and faculty.
+      this research is still on-going.
     </div>
 
     <script src="script.js"></script>
