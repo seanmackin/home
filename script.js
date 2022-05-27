@@ -18,7 +18,7 @@ function revealMenu(evt) {
   if (contentBox.style.left == 0 || contentBox.style.left == "0px") {
     contentBox.style.left = Math.round(100 * menuSize / totalWidth) + "%" ;
     contentBox.style.width = Math.round(100 * (totalWidth-menuSize)/totalWidth)+ "%";
-  } else if (contentBox.style.left == Math.round(100 * menuSize / totalWidth) + "%"){
+  } else if (contentBox.style.left != 0 && contentBox.style.left != "0px" && contentBox.style.left != "0%"){
     contentBox.style.left = "0";
     contentBox.style.width = "100%";
   }
