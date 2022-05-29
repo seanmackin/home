@@ -13,7 +13,7 @@
   --raisin-white: hsl(0, 0%, 90%);
   --magenta: hsl(324, 30%, 55%);
   --magenta-l: hsl(324, 30%, 65%);
-  --magenta-d: hsl(324, 40%, 60%);
+  --magenta-d: hsl(324, 40%, 45%);
 
   }
 html, body {
@@ -175,7 +175,7 @@ nav #site-title {
   padding-top: 1.6vw;
   background-color: var(--sandy);
   flex: 1;
-  box-shadow: inset 0rem 0rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
   color: var(--raisin-black);
   font-size: calc(0.5vw + 16px);
 }
@@ -190,3 +190,15 @@ nav #site-title {
 }
 #course-section ul {margin-left: 0; padding-left:1.2rem}
 #course-section li {margin-left: 0; padding-left:0; text-align: left;}
+
+/* fun stuff */
+
+#fun-stuff {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  padding: 4vw;
+  box-shadow: inset 0rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
+  background-color: var(--magenta-d);
+  color: white;
+  height: 40vh;
+  font-size: calc(0.5vw + 16px);
+}
