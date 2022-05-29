@@ -81,7 +81,7 @@ nav > div {
   background-color: var(--magenta);
   box-shadow: inset 0rem -0.2rem 1rem 0.1rem rgba(0, 0, 0, 0.6);
   color: black;
-  font-size: 1.4vw;
+  font-size: calc(0.66vw + 10px);
 }
 .nav-link {
   /* centering */
@@ -102,7 +102,7 @@ nav > div {
 .nav-link:hover {
   background-color: var(--magenta-d);
   box-shadow: inset 0rem 0rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
-  font-size: 1.5vw;
+  font-size: calc(0.66vw + 11px);
 }
 .tbd {
   flex:3
@@ -132,18 +132,17 @@ nav #site-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* MODIFY THIS AS YOU ADD MORE TO MAIN PAGE */
-  height: 150%;
   width: 100%;
   transition: 400ms;
   background-color: var(--raisin-black-ll);
 }
 #intro h1 {
   text-shadow: 1px 1px 5px black;
-  font-size: 4.5vw;
+  font-size: calc(2.6vw + 30px);
 }
-.content p {
+#intro p {
   color: white;
+  font-size: calc(0.66vw + 20px);
   text-shadow: 1px 1px 5px black;
   overflow: hidden;
 }
@@ -156,16 +155,16 @@ nav #site-title {
   /* color scheme */
   background-color: var(--raisin-black-l);
   color: var(--cadmium-orange);
-  font-size: 2vw;
 }
 #prof-pic {
-  position: absolute;
-  top: 12vw;
+  float: right;
+  top: 10vw;
   right: 6vw;
   height: auto;
-  width: 20%;
+  width: calc(20% + 30px);
   border-radius: 50%;
   box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+  transform: translate(-1.5vw, calc(-6vw + 50px));
 }
 #info-blurb {
   width: 70%;
@@ -177,12 +176,16 @@ nav #site-title {
   flex: 1;
   box-shadow: inset 0rem 0rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
   color: var(--raisin-black);
-  font-size: 1.5vw;
+  font-size: calc(0.5vw + 16px);
 }
 #courses {
   display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
 }
 #year {
   flex: 1;
   text-align: center;
 }
+#course-section ul {margin-left: 0; padding-left:1.2rem}
+#course-section li {margin-left: 0; padding-left:0; text-align: left;}
