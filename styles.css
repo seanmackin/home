@@ -139,6 +139,7 @@ nav #site-title {
 #intro h1 {
   text-shadow: 1px 1px 5px black;
   font-size: calc(2.6vw + 30px);
+  margin-top: 0.4em;
 }
 #intro p {
   color: white;
